@@ -1,4 +1,4 @@
-from multiprocessing import Pool
+from multiprocessing import Pool, Process
 
 def square(number):
     """Función que calcula el cuadrado de un número"""
