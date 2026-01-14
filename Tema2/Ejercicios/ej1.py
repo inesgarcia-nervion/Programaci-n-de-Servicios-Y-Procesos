@@ -13,11 +13,24 @@ def sumar(numero:int):
     print(f"Suma hasta {numero} da de resultado {resultado}")
 
 if __name__ == '__main__':
-    
-    p = Process(target=sumar, args=(10,))   # Paréntesis y coma alrededor del número necesarios
+
     inicio = time.perf_counter()
-    p.start()
-    p.join()
+    
+    # Primero se crean los procesos
+    p1 = Process(target=sumar, args=(10000,))
+    p2 = Process(target=sumar, args=(20000,))
+    p3 = Process(target=sumar, args=(30000,))
+    
+    # Después se arrancan TODOS a la vez
+    p1.start()
+    p2.start()
+    p3.start()
+    
+    # Por último, esperamos a que TODOS terminen
+    p1.join()
+    p2.join()
+    p3.join()
+    
     
     fin = time.perf_counter()
     tiempo_proceso = fin - inicio
