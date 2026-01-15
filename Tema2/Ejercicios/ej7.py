@@ -20,10 +20,10 @@ def leerFichero(cola, fichero):
 
 def sumar(cola):
     while True:
-        numero = cola.get() # Sacar de cola
-        if numero is None:
+        numeros = cola.get() # Sacar de cola
+        if numeros is None:
             break
-        num1, num2 = numero
+        num1, num2 = numeros
         inicio = min(num1, num2)
         fin = max(num1, num2)
         resultado = sum(range(inicio, fin+1)) 
