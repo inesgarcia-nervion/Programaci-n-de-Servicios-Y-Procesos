@@ -33,7 +33,7 @@ if __name__ == '__main__':
         results = pool.map(sumar, numero)
     tiempo2 = time.perf_counter()
     tiempo_proceso = tiempo2 - inicio
-    print(f"El proceso 1 ha tardado {tiempo_proceso: .2} segundos\n")
+    print(f"El proceso 2 ha tardado {tiempo_proceso: .2} segundos\n")
     
     
     
@@ -46,5 +46,5 @@ if __name__ == '__main__':
         results = pool.map(sumar, numero)
     tiempo3 = time.perf_counter()
     tiempo_proceso = tiempo3 - inicio
-    print(f"El proceso 1 ha tardado {tiempo_proceso: .2} segundos")
+    print(f"El proceso 3 ha tardado {tiempo_proceso: .2} segundos")
         
