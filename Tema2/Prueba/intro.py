@@ -1,5 +1,5 @@
 from multiprocessing import Process
-import os
+import os       # Para obtener el PID del proceso.
 import time
 
 

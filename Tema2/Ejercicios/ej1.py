@@ -10,6 +10,7 @@ import time
 
 def sumar(numero:int):
     resultado = sum(range(1, numero+1)) 
+    #resultado = int(input("Introduce un número: "))    Si pidiera un número por teclado
     print(f"Suma hasta {numero} da de resultado {resultado}")
 
 if __name__ == '__main__':
