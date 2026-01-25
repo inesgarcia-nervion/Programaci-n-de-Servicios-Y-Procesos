@@ -1,0 +1,1 @@
+"""El padre envía una cadena por una Pipe al hijo; el hijo la procesa (p. ej. la invierte) y la devuelve."""
