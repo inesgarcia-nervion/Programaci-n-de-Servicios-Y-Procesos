@@ -1,0 +1,20 @@
+Matrix;1999
+El sexto sentido;1999
+Titanic;1997
+Good Will Hunting;1997
+Pulp Fiction;1994
+Forrest Gump;1994
+Inception;2010
+Toy Story 3;2010
+Avatar;2009
+Up;2009
+Parásitos;2019
+Joker;2019
+La La Land;2016
+Moonlight;2016
+El caballero oscuro;2008
+Iron Man;2008
+El viaje de Chihiro;2001
+Amélie;2001
+Black Panther;2018
+A Star Is Born;2018
