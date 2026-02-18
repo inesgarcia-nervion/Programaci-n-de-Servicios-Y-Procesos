@@ -3,6 +3,8 @@ import time
 import random
 
 class Mensaje(threading.Thread):
+    lock = threading.Lock()
+
     def __init__(self, nombre):
         super().__init__()
         self.nombre = nombre
@@ -10,11 +12,15 @@ class Mensaje(threading.Thread):
 
     def run(self):
         while True:
-            print(f"Soy {self.nombre} y estoy trabajando")
-            tiempo = random.randint(1, 10)
-            time.sleep(tiempo)
-            print(f"Soy {self.nombre} y he terminado de trabajar")
-            self.trabajo_realizado = True
+            with Mensaje.lock:
+                if self.trabajo_realizado:
+                    break
+                print(f"Soy {self.nombre} y estoy trabajando")
+                tiempo = random.randint(1, 10)
+                time.sleep(tiempo)
+                print(f"Soy {self.nombre} y he terminado de trabajar")
+                self.trabajo_realizado = True
+                break
 
 if __name__ == "__main__":
     nombres = ["Inés", "Ángela", "Dylan", "Paula", "Ale"]
