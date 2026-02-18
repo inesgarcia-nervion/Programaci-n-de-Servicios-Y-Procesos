@@ -1,0 +1,1 @@
+"""Un productor pone números en una Queue. Un consumidor los lee y calcula la suma total."""
